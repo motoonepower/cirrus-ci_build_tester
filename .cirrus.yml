@@ -11,7 +11,6 @@ task:
       memory: 32g
       commands:
       - sudo apt-get install gpg
-      - rm -rf ~/.repoconfig
       - apt-get update
       - apt-get upgrade
     download_ccache_background_script: # To download ccache in background
