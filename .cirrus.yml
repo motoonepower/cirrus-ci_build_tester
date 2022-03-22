@@ -9,6 +9,8 @@ task:
       image: aarunalr/aosp-build
       cpu: 8
       memory: 32g
+      volumes:
+          - /home/cirrus/ccache:/home/cirrus/ccache
       commands:
       - sudo apt-get install gpg
       - apt-get update
