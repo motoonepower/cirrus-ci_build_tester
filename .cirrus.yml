@@ -19,5 +19,5 @@ task:
       - bash sync # Sync script
     build_script: # To build rom
       - bash build # Rom build script
-    upload_ccache_script: # Upload ccache to cloud foreground
+    upload_ccache_script: # Upload ccache to clodud foreground
       - bash upload_ccache # Ccache uploading script
