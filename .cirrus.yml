@@ -3,7 +3,7 @@ env:
     CIRRUS_WORKING_DIR: "/tmp/ci"
     #10
 task:
-    name: Monu
+    name: motoonepower
     timeout_in: 260m
     container:
       image: aarunalr/aosp-build
