@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp/rom
 
-# Normal build steps
+# Normal build step
 . build/envsetup.sh
 lunch lineage_chef-userdebug
 export CCACHE_DIR=~/ccache
