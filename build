@@ -1,9 +1,10 @@
 #!/bin/bash
 cd /tmp/rom
+ls vendor/motorola/
 
 # Normal build step
 . build/envsetup.sh
-lunch lineage_chef-userdebug
+lunch aosp_chef-userdebug
 export CCACHE_DIR=~/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
