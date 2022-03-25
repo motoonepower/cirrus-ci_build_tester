@@ -6,15 +6,15 @@ task:
     name: motoonepower
     timeout_in: 260m
     container:
-        image: aarunalr/aosp-build
-        cpu: 24
-        memory: 120G
-        volumes:
+      image: aarunalr/aosp-build
+      cpu: 8
+      memory: 32g
+      volumes:
           - /home/cirrus/ccache:/home/cirrus/ccache
       commands:
       - sudo apt-get install gpg
-      - sudo apt-get update
-      - sudo apt-get upgrade
+      - apt-get update
+      - apt-get upgrade
     download_ccache_background_script: # To downloadw ccache in background
       - bash download_ccache # Ccache download script
     sync_script: # To sync rom source and dt, vt, kernel etc.
