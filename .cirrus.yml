@@ -6,7 +6,7 @@ task:
     name: motoonepower
     timeout_in: 260m
     container:
-        image: apon77/aosp:cirrus
+        image: aarunalr/aosp-build
         cpu: 24
         memory: 120G
         volumes:
