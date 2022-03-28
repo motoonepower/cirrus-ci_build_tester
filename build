@@ -11,7 +11,7 @@ export USE_CCACHE=1
 ccache -M 20G
 ccache -o compression=true
 ccache -z
-make bacon -j100 & # dont remove that '&'
+mka otapackage -j100 & # dont remove that '&'
 ccache -s
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 
